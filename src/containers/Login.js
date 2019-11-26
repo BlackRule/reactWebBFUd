@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
+import Container from "./Container";
 
 
-class Login extends Component {
+class Login extends Container {
 	constructor(props) {
 		super(props);
 		this.loginRef = React.createRef();
@@ -11,6 +12,7 @@ class Login extends Component {
 	}
 
 	componentDidMount() {
+		super.componentDidMount();
 	}
 
 	logIn = (e) => {

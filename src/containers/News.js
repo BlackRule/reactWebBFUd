@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
+import Container from "./Container";
 
 
-class News extends Component {
+class News extends Container {
 	constructor(props) {
 		super(props);
 
@@ -11,7 +12,7 @@ class News extends Component {
 	}
 
 	componentDidMount() {
-
+		super.componentDidMount();
 	}
 
 	render() {

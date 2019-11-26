@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react'
+import Container from "./Container";
 
-class Users extends Component {
+class Users extends Container {
 	constructor(props) {
 		super(props);
 		this.fioRef = React.createRef();
@@ -17,7 +18,7 @@ class Users extends Component {
 	}
 
 	componentDidMount() {
-		console.log(localStorage.getItem("users"));
+		super.componentDidMount();
 	}
 
 	addUser =  (e) => {

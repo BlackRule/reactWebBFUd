@@ -1,7 +1,8 @@
 import React, {Component, Fragment} from 'react'
+import Container from "./Container";
 
 
-class Main extends Component {
+class Main extends Container {
 	constructor(props) {
 		super(props);
 
@@ -11,7 +12,7 @@ class Main extends Component {
 	}
 
 	componentDidMount() {
-
+		super.componentDidMount();
 	}
 
 	render() {

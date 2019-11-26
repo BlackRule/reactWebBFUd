@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a705b1a-7080-4d9e-8e5d-ed4288111ce8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/normalize.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/News.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/News.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +48,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/containers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -69,6 +63,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\BFU\7semestrAgain\react\repod\src\containers" />
       <recent name="C:\Projects\BFU\7semestrAgain\react\repod\public" />
     </key>
   </component>
@@ -116,10 +111,24 @@
       <updated>1574797434716</updated>
       <workItem from="1574797438659" duration="4084000" />
     </task>
+    <task id="LOCAL-00001" summary="rewritten">
+      <created>1574808792748</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574808792748</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="rewritten" />
+    <option name="LAST_COMMIT_MESSAGE" value="rewritten" />
   </component>
   <component name="WindowStateProjectService">
     <state x="234" y="3" key="#ESLint" timestamp="1574776082027">
@@ -134,6 +143,10 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="322" y="71" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.689@0.0.1280.689" timestamp="1574797418167" />
+    <state x="252" y="0" key="CommitChangelistDialog2" timestamp="1574808792013">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="252" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1574808792013" />
     <state width="617" height="165" key="GridCell.Tab.0.bottom" timestamp="1574806940955">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
@@ -150,10 +163,10 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="617" height="165" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1574806940955" />
-    <state x="435" y="55" key="RollbackChangesDialog" timestamp="1574806172148">
+    <state x="435" y="55" key="RollbackChangesDialog" timestamp="1574808754034">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="435" y="55" key="RollbackChangesDialog/0.0.1280.689@0.0.1280.689" timestamp="1574806172148" />
+    <state x="435" y="55" key="RollbackChangesDialog/0.0.1280.689@0.0.1280.689" timestamp="1574808754034" />
     <state x="329" y="169" key="com.intellij.ide.util.TipDialog" timestamp="1574797438657">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
