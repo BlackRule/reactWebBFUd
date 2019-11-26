@@ -1,6 +1,4 @@
-import React, {Component, Fragment} from 'react'
-import Menu from "../components/Menu";
-import Footer from "../components/Footer";
+import React, {Component} from 'react'
 
 
 class News extends Component {
@@ -18,11 +16,7 @@ class News extends Component {
 
 	render() {
 		return (
-			<Fragment>
-				<Menu/>
 				<h1>News</h1>
-				<Footer/>
-			</Fragment>
 		);
 	}
 }

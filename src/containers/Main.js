@@ -1,6 +1,4 @@
 import React, {Component, Fragment} from 'react'
-import Menu from "../components/Menu";
-import Footer from "../components/Footer";
 
 
 class Main extends Component {
@@ -19,9 +17,7 @@ class Main extends Component {
 	render() {
 		return (
 			<Fragment>
-				<Menu/>
 				<h1>Main</h1>
-				<Footer/>
 			</Fragment>
 		);
 	}

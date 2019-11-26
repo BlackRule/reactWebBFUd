@@ -1,7 +1,4 @@
 import React, {Component, Fragment} from 'react'
-import Menu from "../components/Menu";
-import Footer from "../components/Footer";
-
 
 class Users extends Component {
 	constructor(props) {
@@ -37,7 +34,6 @@ class Users extends Component {
 	render() {
 		return (
 			<Fragment>
-			<Menu/>
 			<h1>Users</h1>
 				<form action="#">
 					<input type="text" ref={this.fioRef} placeholder="ФИО"/>
@@ -60,7 +56,6 @@ class Users extends Component {
 					})}
 					</tbody>
 				</table>
-		<Footer/>
 		</Fragment>
 		);
 	}

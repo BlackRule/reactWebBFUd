@@ -1,8 +1,5 @@
-import React, {Component, Fragment} from 'react'
+import React, {Component} from 'react'
 import $ from 'jquery'
-import Menu from "../components/Menu";
-import Footer from "../components/Footer";
-
 
 
 class Login extends Component {
@@ -27,17 +24,16 @@ class Login extends Component {
 					label.addClass('active highlight');
 				}
 			} else if (e.type === 'blur') {
-				if( $this.val() === '' ) {
+				if ($this.val() === '') {
 					label.removeClass('active highlight');
 				} else {
 					label.removeClass('highlight');
 				}
 			} else if (e.type === 'focus') {
 
-				if( $this.val() === '' ) {
+				if ($this.val() === '') {
 					label.removeClass('highlight');
-				}
-				else if( $this.val() !== '' ) {
+				} else if ($this.val() !== '') {
 					label.addClass('highlight');
 				}
 			}
@@ -57,40 +53,30 @@ class Login extends Component {
 
 	render() {
 		return (
-			<Fragment>
-				<div className="form">
-					<Menu/>
-					<div className="tab-content">
-						<div id="login">
-							<h1>Welcome Back!</h1>
-							<h1 id="error" className="hidden">Имя пользователя или пароль введены не верно</h1>
+			<div id="login">
+				<h1>Welcome Back!</h1>
+				<h1 id="error" className="hidden">Имя пользователя или пароль введены не верно</h1>
 
-							<form action="#">
+				<form action="#">
 
-								<div className="field-wrap">
-									<label>
-										User name<span className="req">*</span>
-									</label>
-									<input type="text" required autoComplete="off" ref={this.loginRef}/>
-								</div>
-
-								<div className="field-wrap">
-									<label>
-										Password<span className="req">*</span>
-									</label>
-									<input type="password" required autoComplete="off" ref={this.passwordRef}/>
-								</div>
-
-								<button className="button button-block" onClick={this.logIn}>Log In</button>
-
-							</form>
-						</div>
-
+					<div className="field-wrap">
+						<label>
+							User name<span className="req">*</span>
+						</label>
+						<input type="text" required autoComplete="off" ref={this.loginRef}/>
 					</div>
-				</div>
 
-				<Footer/>
-			</Fragment>
+					<div className="field-wrap">
+						<label>
+							Password<span className="req">*</span>
+						</label>
+						<input type="password" required autoComplete="off" ref={this.passwordRef}/>
+					</div>
+
+					<button className="button button-block" onClick={this.logIn}>Log In</button>
+
+				</form>
+			</div>
 		);
 	}
 }
