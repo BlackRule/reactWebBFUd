@@ -1,13 +1,12 @@
-import React, { Component, Fragment } from 'react'
+import React, {Component, Fragment} from 'react'
+import {NavLink} from "react-router-dom";
 
 
 class Menu extends Component {
 	constructor(props) {
 		super(props);
 
-		this.state = {
-
-			};
+		this.state = {};
 	}
 
 	componentDidMount() {
@@ -18,10 +17,14 @@ class Menu extends Component {
 		return (
 
 			<Fragment>
-				<a href="/">Main</a>
-				<a href="/login">Login</a>
-				<a href="/users">Users</a>
-				<a href="/news">News</a>
+				<ul className="tab-group">
+					<li className="tab"><NavLink exact to="/">Main</NavLink></li>
+					<li className="tab"><NavLink to="/login">Login</NavLink></li>
+					{/*TODO*/}
+					<li className="tab"><NavLink to={localStorage.getItem("authorised") === "true" ? "/users" : "/login"}>Users</NavLink></li>
+					<li className="tab"><NavLink to="/news">News</NavLink></li>
+				</ul>
+
 			</Fragment>
 
 		);
