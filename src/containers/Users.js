@@ -36,11 +36,19 @@ class Users extends Container {
 		return (
 			<Fragment>
 			<h1>Users</h1>
-				<form action="#">
-					<input type="text" ref={this.fioRef} placeholder="ФИО"/>
-					<input type="date" ref={this.dateRef} title="Дата рождения"/>
-					<input type="submit" onClick={this.addUser} value="Добавить"/>
+				<form action="#" onSubmit={this.addUser}>
+					<div className="field-wrap">
+						<label>
+							ФИО<span className="req">*</span>
+						</label>
+						<input type="text" required autoComplete="off" ref={this.fioRef}/>
+					</div>
+					<div className="field-wrap">
+						<input type="date" required autoComplete="off" ref={this.dateRef} title="Дата рождения"/>
+					</div>
+					<input type="submit" className="button button-block" value="Добавить"/>
 				</form>
+				<input type="button" onClick={this.logout} className="button button-block logout" value="Logout"/>
 				<table>
 					<thead>
 					<tr>
@@ -59,6 +67,11 @@ class Users extends Container {
 				</table>
 		</Fragment>
 		);
+	}
+
+	logout() {
+		localStorage.removeItem("authorised");
+		window.location = "/login"
 	}
 }
 

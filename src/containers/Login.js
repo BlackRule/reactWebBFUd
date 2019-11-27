@@ -7,8 +7,7 @@ class Login extends Container {
 		super(props);
 		this.loginRef = React.createRef();
 		this.passwordRef = React.createRef();
-
-		this.state = {};
+		this.state = {error: false};
 	}
 
 	componentDidMount() {
@@ -20,15 +19,16 @@ class Login extends Container {
 		if (this.loginRef.current.value === "Admin" && this.passwordRef.current.value === "12345") {
 			localStorage.setItem("authorised", "true");
 			window.location = "/users"
+		} else {
+			this.setState({error: true});
 		}
-		document.getElementById("error").removeClass("hidden");
 	};
 
 	render() {
 		return (
 			<div id="login">
 				<h1>Welcome Back!</h1>
-				<h1 id="error" className="hidden">Имя пользователя или пароль введены не верно</h1>
+				<h1 id="error" className={this.state.error?"":"hidden"}>Имя пользователя или пароль введены не верно</h1>
 
 				<form action="#">
 
@@ -36,14 +36,14 @@ class Login extends Container {
 						<label>
 							User name<span className="req">*</span>
 						</label>
-						<input type="text" required autoComplete="off" ref={this.loginRef}/>
+						<input type="text" required autoComplete="off" className={this.state.error?"error":""} ref={this.loginRef}/>
 					</div>
 
 					<div className="field-wrap">
 						<label>
 							Password<span className="req">*</span>
 						</label>
-						<input type="password" required autoComplete="off" ref={this.passwordRef}/>
+						<input type="password" required autoComplete="off" className={this.state.error?"error":""} ref={this.passwordRef}/>
 					</div>
 
 					<button className="button button-block" onClick={this.logIn}>Log In</button>

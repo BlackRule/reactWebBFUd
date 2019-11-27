@@ -65,7 +65,7 @@ h1 {
   text-align: center;
   color: #ffffff;
   font-weight: 300;
-  margin: 0 0 40px;
+  margin: 0 0 10px;
 }
 
 label {
@@ -170,8 +170,30 @@ textarea {
 
 #error{
   color: red;
+  font-size: 14px;
 }
+
+input.error, textarea.error{
+   border: 1px solid #FF0000;
+}
+
 
 .hidden{
   display: none;
+}
+
+table{
+  border: 1px solid #a0b3b0;
+  margin: 10px 0 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+td{
+  border: 1px solid #a0b3b0;
+}
+.logout{
+  background: #FF0000;
+}
+
+.logout:hover, .logout:focus {
+  background: #ba0000;
 }
